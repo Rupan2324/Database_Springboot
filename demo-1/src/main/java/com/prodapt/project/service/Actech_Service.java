@@ -21,14 +21,19 @@ public class Actech_Service {
 	public List<Actech_login> getActech_logins(){
 		return repository.findAll();
 	}
-	public String deleteActech_logins(int username) {
-		repository.deleteById(username);
-		return "Student removed!! "+username;
+	public String deleteActech_logins(String name) {
+		repository.deleteById(name);
+		return "Student removed!! "+name;
 	}
 	public Actech_login updateActech_login(Actech_login actech) {
-		Actech_login exisitingStudent1 = repository.findByUsername(actech.getUsername());
+		Actech_login exisitingStudent1 = repository.findByName(actech.getName());
+		exisitingStudent1.setUsername(actech.getUsername());
 		exisitingStudent1.setPassword(actech.getPassword());
-		exisitingStudent1.setRole(actech.getRole());
+		exisitingStudent1.setDob(actech.getDob());
+		exisitingStudent1.setGender(actech.getGender());
+		exisitingStudent1.setDepartment(actech.getDepartment());
+		exisitingStudent1.setEmail(actech.getEmail());
+		exisitingStudent1.setPhonenumber(actech.getPhonenumber());
 		return repository.save(exisitingStudent1);
 	}
 }

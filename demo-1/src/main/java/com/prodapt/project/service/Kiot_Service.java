@@ -2,6 +2,7 @@ package com.prodapt.project.service;
 
 import java.util.List;
 
+import com.prodapt.project.bean.Actech_login;
 import com.prodapt.project.bean.Kiot_login;
 import com.prodapt.project.repositiory.Kiot_Repository;
 
@@ -21,14 +22,19 @@ public class Kiot_Service {
 	public List<Kiot_login> getKiots(){
 		return repository.findAll();
 	}
-	public String deleteKiots(int k_username) {
-		repository.deleteById(k_username);
-		return "Student removed!! "+k_username;
+	public String deleteKiots(String name) {
+		repository.deleteById(name);
+		return "Student removed!! "+name;
 	}
 	public Kiot_login updateKiot(Kiot_login kiot) {
-		Kiot_login exisitingStudent = repository.findByUsername(kiot.getUsername());
-		exisitingStudent.setPassword(kiot.getPassword());
-		exisitingStudent.setRole(kiot.getRole());
-		return repository.save(exisitingStudent);
+		Kiot_login exisitingStudent1 = repository.findByName(kiot.getName());
+		exisitingStudent1.setUsername(kiot.getUsername());
+		exisitingStudent1.setPassword(kiot.getPassword());
+		exisitingStudent1.setDob(kiot.getDob());
+		exisitingStudent1.setGender(kiot.getGender());
+		exisitingStudent1.setDepartment(kiot.getDepartment());
+		exisitingStudent1.setEmail(kiot.getEmail());
+		exisitingStudent1.setPhonenumber(kiot.getPhonenumber());
+		return repository.save(exisitingStudent1);
 	}
 }

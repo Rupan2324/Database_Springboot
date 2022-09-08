@@ -1,0 +1,5 @@
+package com.prodapt.project.bean;
+
+public class Admin_login {
+
+}

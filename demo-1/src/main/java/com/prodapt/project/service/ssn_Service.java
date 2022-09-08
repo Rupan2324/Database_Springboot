@@ -2,6 +2,7 @@ package com.prodapt.project.service;
 
 import java.util.List;
 
+import com.prodapt.project.bean.Actech_login;
 import com.prodapt.project.bean.ssn_login;
 import com.prodapt.project.repositiory.ssn_Repository;
 
@@ -21,14 +22,19 @@ public class ssn_Service {
 	public List<ssn_login> getssns(){
 		return repository.findAll();
 	}
-	public String deletessns(int s_username) {
-		repository.deleteById(s_username);
-		return "Student removed!! "+s_username;
+	public String deletessns(String name) {
+		repository.deleteById(name);
+		return "Student removed!! "+name;
 	}
 	public ssn_login updatessn(ssn_login ssn) {
-		ssn_login exisitingStudent = repository.findByUsername(ssn.getUsername());
-		exisitingStudent.setPassword(ssn.getPassword());
-		exisitingStudent.setRole(ssn.getRole());
-		return repository.save(exisitingStudent);
+		ssn_login exisitingStudent1 = repository.findByName(ssn.getName());
+		exisitingStudent1.setUsername(ssn.getUsername());
+		exisitingStudent1.setPassword(ssn.getPassword());
+		exisitingStudent1.setDob(ssn.getDob());
+		exisitingStudent1.setGender(ssn.getGender());
+		exisitingStudent1.setDepartment(ssn.getDepartment());
+		exisitingStudent1.setEmail(ssn.getEmail());
+		exisitingStudent1.setPhonenumber(ssn.getPhonenumber());
+		return repository.save(exisitingStudent1);
 	}
 }
