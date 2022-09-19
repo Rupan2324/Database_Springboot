@@ -1,0 +1,16 @@
+package com.prodapt.project.repositiory;
+
+import java.util.Optional;
+
+import com.prodapt.project.bean.Student_login;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface Student_Repository extends JpaRepository<Student_login,String>{
+	Student_login findByRegno(String rollno);
+
+	void deleteStudent_loginById(String regno);
+
+	Optional findStudentByRegno(String regno);
+}

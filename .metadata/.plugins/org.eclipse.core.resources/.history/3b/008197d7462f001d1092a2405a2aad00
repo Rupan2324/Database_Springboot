@@ -1,5 +1,0 @@
-package com.prodapt.project.repositiory;
-
-public interface Admin_Repository {
-
-}

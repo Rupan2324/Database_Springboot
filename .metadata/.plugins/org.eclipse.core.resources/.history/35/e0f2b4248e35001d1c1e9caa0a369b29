@@ -1,0 +1,5 @@
+package com.prodapt.project.exception;
+
+public class UserNotFoundException {
+
+}

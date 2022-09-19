@@ -1,0 +1,15 @@
+package com.prodapt.project.repositiory;
+
+import java.util.Optional;
+
+import com.prodapt.project.bean.Result;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface Result_Repository extends JpaRepository<Result,String>{
+	Result findByRollno(String rollno);
+
+	void deleteResultByRollno(String rollno);
+
+	Optional<Result> findResultByRollno(String rollno);
+}

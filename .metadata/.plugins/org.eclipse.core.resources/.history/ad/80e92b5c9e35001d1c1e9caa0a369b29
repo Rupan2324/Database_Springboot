@@ -1,0 +1,35 @@
+package com.prodapt.project.controller;
+
+import java.util.List;
+
+import com.prodapt.project.bean.Student_login;
+import com.prodapt.project.service.Student_Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Student_Controller {
+	@Autowired
+	private Student_Service service;
+	@PostMapping("/addstudent")
+	public Student_login addStudent(@RequestBody Student_login student) {
+		return service.saveStudent_login(student);
+	}
+	@PostMapping("/addstudents")
+	public List<Student_login> addStudents(@RequestBody List<Student_login> students){
+	    return service.saveStudent_logins(students);
+	}
+	@GetMapping("/students")
+	public List<Student_login> findAllStudents(){
+	    return service.getStudent_logins();
+	}
+	@PutMapping("/updateStudent")
+	public Student_login updateStudent(@RequestBody Student_login student) {
+	    return service.updateStudent_login(student);
+	}
+}

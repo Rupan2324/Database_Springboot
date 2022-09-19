@@ -1,0 +1,35 @@
+package com.prodapt.project.service;
+
+import java.util.List;
+
+import com.prodapt.project.bean.Result;
+import com.prodapt.project.repositiory.Result_Repository;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+@Service
+public class Result_Service {
+	@Autowired
+	private Result_Repository repository;
+	public Result saveResult(Result result) {
+		return repository.save(result);
+	}
+	public List<Result> saveResults(List<Result> results){
+		return repository.saveAll(results);
+	}
+	public List<Result> getResults(){
+		return repository.findAll();
+	}
+	public String deleteResults(String rollno) {
+		repository.deleteResultByRollno(rollno);
+		return "result removed!! "+rollno;
+	}
+	public Result updateResult(Result result) {
+		Result exisitingresult1 = repository.findByRollno(result.getRollno());
+		exisitingresult1.setCourse_code(result.getCourse_code());
+		exisitingresult1.setSemester(result.getSemester());
+		exisitingresult1.setGrade(result.getGrade());
+		exisitingresult1.setResult(result.getResult());
+		return repository.save(exisitingresult1);
+	}
+}

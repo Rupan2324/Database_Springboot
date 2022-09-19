@@ -1,0 +1,10 @@
+package com.prodapt.project.repositiory;
+
+import com.prodapt.project.bean.Student_login;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface Student_Repository extends JpaRepository<Student_login,String>{
+	Student_login findByName(String name);
+}

@@ -1,5 +1,6 @@
 package com.prodapt.project.bean;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -8,24 +9,25 @@ import javax.persistence.Table;
 @Table(name="institution")
 public class Institution {
 	@Id
+	private String college;
+	@Column(nullable = false)
 	private int icode;
-	private String iname;
 	@Override
 	public String toString() {
-		return "Institution [icode=" + icode + ", iname=" + iname + "]";
+		return "Institution [college=" + college + ", icode=" + icode + "]";
 	}
-	
+	public String getCollege() {
+		return college;
+	}
+	public void setCollege(String college) {
+		this.college = college;
+	}
 	public int getIcode() {
 		return icode;
 	}
 	public void setIcode(int icode) {
 		this.icode = icode;
 	}
-	public String getIname() {
-		return iname;
-	}
-	public void setIname(String iname) {
-		this.iname = iname;
-	}
+	
 	
 }

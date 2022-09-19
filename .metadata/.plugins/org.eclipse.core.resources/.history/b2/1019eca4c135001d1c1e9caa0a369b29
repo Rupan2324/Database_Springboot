@@ -1,0 +1,34 @@
+package com.prodapt.project.controller;
+
+import java.util.List;
+
+import com.prodapt.project.bean.Result;
+import com.prodapt.project.service.Result_Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class Result_Controller {
+	@Autowired
+	private Result_Service service;
+	@PostMapping("/addresult")
+	public Result addResult(@RequestBody Result result) {
+		return service.saveResult(result);
+	}
+	@PostMapping("/addresults")
+	public List<Result> addresults(@RequestBody List<Result> results){
+	    return service.saveResults(results);
+	}
+	@GetMapping("/results")
+	public List<Result> findAllResults(){
+	    return service.getResults();
+	}
+	@PutMapping("/updateResult")
+	public Result updateResult(@RequestBody Result result) {
+	    return service.updateResult(result);
+	}
+}

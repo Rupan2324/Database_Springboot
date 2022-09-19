@@ -746,3 +746,672 @@ java.net.URISyntaxException: Illegal character in path at index 13: file:/D:/Jav
 2022-09-07 22:54:19,305 [Worker-252: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-09-07 22:54:19,305 [Worker-252: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
 2022-09-08 10:13:25,576 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-08 10:51:14,544 [ForkJoinPool.commonPool-worker-28] ERROR o.e.m.e.l.MavenRuntimeClasspathProvider - Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+java.net.URISyntaxException: Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:81)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:148)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:161)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:233)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+2022-09-08 12:01:31,609 [ForkJoinPool.commonPool-worker-40] ERROR o.e.m.e.l.MavenRuntimeClasspathProvider - Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+java.net.URISyntaxException: Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:81)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:148)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:161)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:233)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+2022-09-08 12:20:21,652 [ForkJoinPool.commonPool-worker-53] ERROR o.e.m.e.l.MavenRuntimeClasspathProvider - Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+java.net.URISyntaxException: Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:81)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:148)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:161)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:233)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+2022-09-08 12:51:25,714 [Worker-48: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 12:51:25,714 [Worker-48: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 12:51:25,720 [Worker-48: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-08 12:51:25,740 [Worker-48: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-08 12:51:25,744 [Worker-48: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 12:51:25,744 [Worker-48: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 12:51:25,744 [Worker-48: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-08 12:53:03,452 [Worker-49: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 12:53:03,452 [Worker-49: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 12:53:03,456 [Worker-49: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-08 12:53:03,461 [Worker-49: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-08 12:53:03,464 [Worker-49: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-08 12:53:03,464 [Worker-49: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-08 12:53:03,464 [Worker-49: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-08 12:53:15,852 [ForkJoinPool.commonPool-worker-50] ERROR o.e.m.e.l.MavenRuntimeClasspathProvider - Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+java.net.URISyntaxException: Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:81)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:148)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:161)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:233)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+2022-09-08 14:17:34,002 [ForkJoinPool.commonPool-worker-68] ERROR o.e.m.e.l.MavenRuntimeClasspathProvider - Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+java.net.URISyntaxException: Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:81)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:148)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:161)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:233)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+2022-09-08 14:23:57,406 [ForkJoinPool.commonPool-worker-73] ERROR o.e.m.e.l.MavenRuntimeClasspathProvider - Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+java.net.URISyntaxException: Illegal character in path at index 13: file:/D:/Java Batch/sts-4.15.1.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.18.3.20220227-1319/jars/
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.addJarsFromBundle(MavenRuntimeClasspathProvider.java:81)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:66)
+	at org.eclipse.m2e.editor.lemminx.MavenRuntimeClasspathProvider.get(MavenRuntimeClasspathProvider.java:1)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.HashMap$EntrySpliterator.forEachRemaining(HashMap.java:1850)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLExtensionRegistry.getXMLLSClassPathExtensions(XMLExtensionRegistry.java:81)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.getExtensionJarPaths(XMLLanguageServer.java:148)
+	at org.eclipse.wildwebdeveloper.xml.internal.XMLLanguageServer.<init>(XMLLanguageServer.java:83)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:204)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:920)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:246)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:63)
+	at org.eclipse.lsp4e.LanguageServersRegistry$ExtensionLanguageServerDefinition.createConnectionProvider(LanguageServersRegistry.java:161)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$0(LanguageServerWrapper.java:233)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1760)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+2022-09-12 15:10:41,462 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-12 15:27:30,901 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-12 15:27:30,916 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-12 15:27:30,921 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-12 15:27:30,944 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-12 15:27:30,947 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-12 15:27:30,947 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-12 15:27:30,947 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-13 11:55:48,166 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-15 09:56:09,035 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-15 16:35:16,272 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-15 16:52:09,793 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-09-15 19:24:23,697 [Worker-53: Launching Executing test in D__AUCOE_Portal_demo-1] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\AUCOE_Portal\demo-1
+2022-09-15 19:24:23,717 [Worker-53: Launching Executing test in D__AUCOE_Portal_demo-1] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B test -Dstyle.color=always -Dstyle.color=always
+2022-09-15 19:25:07,418 [Worker-54: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:25:07,418 [Worker-54: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:25:07,422 [Worker-54: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 19:25:07,437 [Worker-54: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 19:25:07,441 [Worker-54: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:25:07,441 [Worker-54: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:25:07,441 [Worker-54: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-15 19:27:28,399 [Worker-56: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:27:28,399 [Worker-56: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:27:28,401 [Worker-56: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 19:27:28,414 [Worker-56: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 19:27:28,419 [Worker-56: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:27:28,419 [Worker-56: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:27:28,419 [Worker-56: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-15 19:32:02,962 [Worker-62: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:32:02,962 [Worker-62: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:32:02,963 [Worker-62: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 19:32:02,968 [Worker-62: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 19:32:02,970 [Worker-62: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:32:02,970 [Worker-62: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:32:02,970 [Worker-62: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-15 19:48:52,032 [Worker-69: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:48:52,033 [Worker-69: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:48:52,033 [Worker-69: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 19:48:52,045 [Worker-69: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 19:48:52,046 [Worker-69: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 19:48:52,046 [Worker-69: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 19:48:52,046 [Worker-69: Building Workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-15 21:47:34,862 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 21:47:34,862 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 21:47:34,863 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 21:47:34,867 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 21:47:34,869 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 21:47:34,869 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 21:47:34,869 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-15 21:50:28,042 [Worker-76: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 21:50:28,042 [Worker-76: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 21:50:28,042 [Worker-76: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 21:50:28,049 [Worker-76: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 21:50:28,051 [Worker-76: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 21:50:28,051 [Worker-76: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 21:50:28,051 [Worker-76: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-15 21:53:35,710 [Worker-79: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 21:53:35,711 [Worker-79: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 21:53:35,712 [Worker-79: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 21:53:35,717 [Worker-79: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 21:53:35,721 [Worker-79: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 21:53:35,721 [Worker-79: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 21:53:35,722 [Worker-79: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-15 22:09:39,880 [Worker-92: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 22:09:39,880 [Worker-92: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 22:09:39,881 [Worker-92: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-15 22:09:39,886 [Worker-92: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-15 22:09:39,888 [Worker-92: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-15 22:09:39,888 [Worker-92: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-15 22:09:39,888 [Worker-92: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 10:47:17,659 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-16 10:53:16,976 [Worker-9: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 10:53:16,976 [Worker-9: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 10:53:16,980 [Worker-9: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 10:53:17,001 [Worker-9: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 10:53:17,004 [Worker-9: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 10:53:17,005 [Worker-9: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 10:53:17,005 [Worker-9: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 10:57:22,724 [Worker-22: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 10:57:22,724 [Worker-22: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 10:57:22,727 [Worker-22: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 10:57:22,733 [Worker-22: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 10:57:22,736 [Worker-22: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 10:57:22,736 [Worker-22: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 10:57:22,736 [Worker-22: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 11:05:20,944 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:05:20,945 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:05:20,945 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 11:05:20,951 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 11:05:20,952 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:05:20,952 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:05:20,952 [Worker-26: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 11:28:19,231 [Worker-31: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:28:19,231 [Worker-31: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:28:19,232 [Worker-31: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 11:28:19,236 [Worker-31: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 11:28:19,237 [Worker-31: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:28:19,237 [Worker-31: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:28:19,237 [Worker-31: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 11:30:13,300 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:30:13,300 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:30:13,300 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 11:30:13,306 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 11:30:13,308 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:30:13,308 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:30:13,308 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 11:31:35,457 [Worker-30: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:31:35,457 [Worker-30: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:31:35,458 [Worker-30: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 11:31:35,465 [Worker-30: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 11:31:35,468 [Worker-30: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 11:31:35,468 [Worker-30: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 11:31:35,468 [Worker-30: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 14:41:07,920 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:41:07,920 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:41:07,921 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 14:41:07,925 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 14:41:07,927 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:41:07,927 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:41:07,927 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 14:42:48,834 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:42:48,834 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:42:48,835 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 14:42:48,855 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 14:42:48,858 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:42:48,858 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:42:48,859 [Worker-65: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 14:44:20,811 [Worker-63: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:44:20,812 [Worker-63: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:44:20,812 [Worker-63: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 14:44:20,817 [Worker-63: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 14:44:20,820 [Worker-63: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:44:20,820 [Worker-63: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:44:20,820 [Worker-63: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 14:45:01,915 [Worker-67: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:45:01,915 [Worker-67: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:45:01,916 [Worker-67: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 14:45:01,922 [Worker-67: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 14:45:01,924 [Worker-67: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 14:45:01,924 [Worker-67: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 14:45:01,924 [Worker-67: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:05:18,432 [Worker-77: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:05:18,433 [Worker-77: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:05:18,433 [Worker-77: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:05:18,440 [Worker-77: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:05:18,442 [Worker-77: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:05:18,442 [Worker-77: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:05:18,442 [Worker-77: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:08:13,265 [Worker-74: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:08:13,265 [Worker-74: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:08:13,267 [Worker-74: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:08:13,274 [Worker-74: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:08:13,275 [Worker-74: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:08:13,276 [Worker-74: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:08:13,276 [Worker-74: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:10:31,302 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:10:31,302 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:10:31,302 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:10:31,309 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:10:31,310 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:10:31,311 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:10:31,311 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:13:24,779 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:13:24,779 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:13:24,780 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:13:24,785 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:13:24,788 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:13:24,788 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:13:24,788 [Worker-82: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:14:30,221 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:14:30,222 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:14:30,222 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:14:30,228 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:14:30,230 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:14:30,230 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:14:30,231 [Worker-80: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:18:17,872 [Worker-83: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:18:17,872 [Worker-83: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:18:17,873 [Worker-83: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:18:17,880 [Worker-83: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:18:17,883 [Worker-83: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:18:17,883 [Worker-83: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:18:17,883 [Worker-83: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:27:07,622 [Worker-85: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:27:07,622 [Worker-85: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:27:07,623 [Worker-85: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:27:07,630 [Worker-85: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:27:07,632 [Worker-85: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:27:07,632 [Worker-85: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:27:07,633 [Worker-85: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:30:14,340 [Worker-91: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:30:14,340 [Worker-91: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:30:14,341 [Worker-91: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:30:14,345 [Worker-91: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:30:14,346 [Worker-91: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:30:14,347 [Worker-91: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:30:14,347 [Worker-91: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:34:37,292 [Worker-96: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:34:37,292 [Worker-96: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:34:37,293 [Worker-96: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:34:37,309 [Worker-96: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:34:37,310 [Worker-96: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:34:37,310 [Worker-96: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:34:37,310 [Worker-96: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:40:24,393 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:40:24,393 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:40:24,394 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:40:24,399 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:40:24,402 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:40:24,402 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:40:24,402 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:43:45,773 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:43:45,773 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:43:45,774 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:43:45,815 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:43:45,816 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:43:45,818 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:43:45,818 [Worker-103: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 15:56:43,995 [Worker-114: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:56:43,995 [Worker-114: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:56:43,996 [Worker-114: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 15:56:44,002 [Worker-114: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 15:56:44,004 [Worker-114: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 15:56:44,004 [Worker-114: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 15:56:44,004 [Worker-114: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:00:15,988 [Worker-119: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:00:15,988 [Worker-119: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:00:15,988 [Worker-119: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:00:15,994 [Worker-119: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:00:15,995 [Worker-119: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:00:15,995 [Worker-119: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:00:15,995 [Worker-119: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:04:39,375 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:04:39,375 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:04:39,376 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:04:39,384 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:04:39,386 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:04:39,386 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:04:39,386 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:05:49,268 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:05:49,268 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:05:49,269 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:05:49,294 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:05:49,296 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:05:49,296 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:05:49,296 [Worker-125: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:12:59,106 [Worker-131: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:12:59,106 [Worker-131: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:12:59,108 [Worker-131: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:12:59,116 [Worker-131: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:12:59,118 [Worker-131: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:12:59,118 [Worker-131: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:12:59,118 [Worker-131: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:17:30,408 [Worker-132: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:17:30,409 [Worker-132: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:17:30,409 [Worker-132: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:17:30,413 [Worker-132: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:17:30,414 [Worker-132: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:17:30,414 [Worker-132: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:17:30,415 [Worker-132: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:23:58,106 [Worker-135: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:23:58,106 [Worker-135: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:23:58,106 [Worker-135: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:23:58,113 [Worker-135: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:23:58,115 [Worker-135: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:23:58,115 [Worker-135: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:23:58,115 [Worker-135: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:31:10,833 [Worker-143: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:31:10,833 [Worker-143: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:31:10,834 [Worker-143: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:31:10,839 [Worker-143: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:31:10,840 [Worker-143: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:31:10,841 [Worker-143: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:31:10,841 [Worker-143: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:32:57,868 [Worker-145: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:32:57,869 [Worker-145: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:32:57,869 [Worker-145: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:32:57,875 [Worker-145: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:32:57,878 [Worker-145: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:32:57,878 [Worker-145: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:32:57,878 [Worker-145: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 16:34:41,166 [Worker-137: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:34:41,166 [Worker-137: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:34:41,167 [Worker-137: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 16:34:41,172 [Worker-137: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 16:34:41,174 [Worker-137: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 16:34:41,175 [Worker-137: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 16:34:41,175 [Worker-137: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:00:04,796 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:00:04,796 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:00:04,797 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:00:04,813 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:00:04,815 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:00:04,815 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:00:04,815 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:00:34,177 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:00:34,177 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:00:34,178 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:00:34,182 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:00:34,183 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:00:34,183 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:00:34,183 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:01:48,329 [Worker-150: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:01:48,329 [Worker-150: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:01:48,330 [Worker-150: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:01:48,335 [Worker-150: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:01:48,336 [Worker-150: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:01:48,336 [Worker-150: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:01:48,336 [Worker-150: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:07:32,268 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:07:32,268 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:07:32,269 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:07:32,278 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:07:32,280 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:07:32,280 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:07:32,280 [Worker-148: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:09:54,860 [Worker-154: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:09:54,860 [Worker-154: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:09:54,861 [Worker-154: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:09:54,869 [Worker-154: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:09:54,872 [Worker-154: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:09:54,872 [Worker-154: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:09:54,872 [Worker-154: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:15:08,929 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:15:08,929 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:15:08,929 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:15:08,936 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:15:08,938 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:15:08,938 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:15:08,938 [Worker-152: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:30:14,554 [Worker-169: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:30:14,554 [Worker-169: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:30:14,555 [Worker-169: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:30:14,558 [Worker-169: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:30:14,559 [Worker-169: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:30:14,559 [Worker-169: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:30:14,559 [Worker-169: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:45:45,448 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:45:45,448 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:45:45,448 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:45:45,452 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:45:45,453 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:45:45,453 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:45:45,453 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:46:50,886 [Worker-175: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:46:50,886 [Worker-175: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:46:50,886 [Worker-175: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:46:50,902 [Worker-175: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:46:50,903 [Worker-175: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:46:50,903 [Worker-175: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:46:50,903 [Worker-175: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:47:50,989 [Worker-166: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:47:50,990 [Worker-166: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:47:50,990 [Worker-166: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:47:51,001 [Worker-166: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:47:51,003 [Worker-166: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:47:51,003 [Worker-166: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:47:51,003 [Worker-166: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:48:38,774 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:48:38,774 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:48:38,774 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:48:38,777 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:48:38,778 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:48:38,778 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:48:38,778 [Worker-174: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 18:53:36,465 [Worker-178: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:53:36,465 [Worker-178: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:53:36,465 [Worker-178: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 18:53:36,468 [Worker-178: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 18:53:36,469 [Worker-178: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 18:53:36,469 [Worker-178: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 18:53:36,469 [Worker-178: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-16 19:08:17,482 [Worker-185: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 19:08:17,482 [Worker-185: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 19:08:17,483 [Worker-185: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-16 19:08:17,501 [Worker-185: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-16 19:08:17,503 [Worker-185: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-16 19:08:17,503 [Worker-185: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-16 19:08:17,503 [Worker-185: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-17 13:51:52,145 [Worker-187: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-17 13:51:52,145 [Worker-187: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-17 13:51:52,145 [Worker-187: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-17 13:51:52,152 [Worker-187: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-17 13:51:52,153 [Worker-187: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-17 13:51:52,153 [Worker-187: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-17 13:51:52,153 [Worker-187: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-18 15:04:50,444 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-09-18 15:26:43,518 [Worker-23: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-18 15:26:43,522 [Worker-23: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-18 15:26:43,526 [Worker-23: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-18 15:26:43,544 [Worker-23: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-18 15:26:43,548 [Worker-23: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-18 15:26:43,548 [Worker-23: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-18 15:26:43,548 [Worker-23: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-18 15:27:17,931 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-18 15:27:17,931 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-18 15:27:17,934 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-18 15:27:17,940 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-18 15:27:17,943 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-18 15:27:17,943 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-18 15:27:17,943 [Worker-33: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-18 15:39:23,217 [Worker-39: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-18 15:39:23,217 [Worker-39: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-18 15:39:23,218 [Worker-39: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-09-18 15:39:23,225 [Worker-39: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-09-18 15:39:23,227 [Worker-39: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-09-18 15:39:23,228 [Worker-39: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-09-18 15:39:23,228 [Worker-39: Launching demo-1 - Demo1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\AUCOE_Portal\demo-1\src\test\resources
+2022-09-19 10:14:40,473 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

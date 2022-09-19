@@ -1,0 +1,5 @@
+package com.prodapt.project.repositiory;
+
+public interface Result_Repository {
+
+}

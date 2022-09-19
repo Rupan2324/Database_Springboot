@@ -1,0 +1,34 @@
+package com.prodapt.project.bean;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="institution")
+public class Institution {
+	@Id
+	private String iname;
+	private int icode;
+	@Override
+	public String toString() {
+		return "Institution [iname=" + iname + ", icode=" + icode + "]";
+	}
+	public String getIname() {
+		return iname;
+	}
+	public void setIname(String iname) {
+		this.iname = iname;
+	}
+	public int getIcode() {
+		return icode;
+	}
+	public void setIcode(int icode) {
+		this.icode = icode;
+	}
+	
+	
+}

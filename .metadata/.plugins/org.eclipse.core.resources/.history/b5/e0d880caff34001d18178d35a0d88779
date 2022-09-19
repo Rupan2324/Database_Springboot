@@ -1,0 +1,55 @@
+package com.prodapt.project.bean;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+
+@Entity
+public class Result {
+@Id
+private String course_code;
+private String semester;
+private String grade;
+private String result;
+@OneToOne(cascade = CascadeType.ALL)
+@JoinColumn(name = "rollno")
+private Student_login studentlogin;
+@Override
+public String toString() {
+	return "Result [course_code=" + course_code + ", semester=" + semester + ", grade=" + grade + ", result=" + result
+			+  "]";
+}
+public String getCourse_code() {
+	return course_code;
+}
+public void setCourse_code(String course_code) {
+	this.course_code = course_code;
+}
+public String getSemester() {
+	return semester;
+}
+public void setSemester(String semester) {
+	this.semester = semester;
+}
+public String getGrade() {
+	return grade;
+}
+public void setGrade(String grade) {
+	this.grade = grade;
+}
+public String getResult() {
+	return result;
+}
+public void setResult(String result) {
+	this.result = result;
+}
+public Student_login getStudentlogin() {
+	return studentlogin;
+}
+public void setStudentlogin(Student_login studentlogin) {
+	this.studentlogin = studentlogin;
+}
+
+}

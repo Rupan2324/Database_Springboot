@@ -1,5 +1,6 @@
 package com.prodapt.project.bean;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -8,11 +9,12 @@ import javax.persistence.Id;
 public class Admin_login {
 @Id
 private String username;
+@Column(nullable=false)
 private String password;
-private String college;
+
 @Override
 public String toString() {
-	return "Admin_login [username=" + username + ", password=" + password + ", college=" + college + "]";
+	return "Admin_login [username=" + username + ", password=" + password  + "]";
 }
 public String getUsername() {
 	return username;
@@ -25,12 +27,6 @@ public String getPassword() {
 }
 public void setPassword(String password) {
 	this.password = password;
-}
-public String getCollege() {
-	return college;
-}
-public void setCollege(String college) {
-	this.college = college;
 }
 
 }
