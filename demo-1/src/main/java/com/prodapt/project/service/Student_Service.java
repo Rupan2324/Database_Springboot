@@ -2,9 +2,14 @@ package com.prodapt.project.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
+import com.prodapt.project.bean.Institution;
 import com.prodapt.project.bean.Student_login;
 import com.prodapt.project.exception.UserNotFoundException;
+import com.prodapt.project.repositiory.Institution_Repository;
 import com.prodapt.project.repositiory.Student_Repository;
+import com.prodapt.project.request.StudentRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,8 +18,14 @@ import org.springframework.stereotype.Service;
 public class Student_Service {
 	@Autowired
 	private Student_Repository repository;
-	public Student_login addStudent_login(Student_login student) {
-		return repository.save(student);
+	@Autowired
+	private Institution_Repository repo;
+	@Transactional
+	public Student_login addStudent_login(StudentRequest s,String institution) {
+		Student_login st = s.toStudent();
+		Institution d = repo.findByCollege(institution);
+		st.setInstitution(d);
+		return repository.save(st);
 	}
 	public List<Student_login> findAllStudent_logins(){
 		return repository.findAll();

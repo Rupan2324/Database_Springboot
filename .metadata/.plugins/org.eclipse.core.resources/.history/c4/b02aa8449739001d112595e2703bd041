@@ -1,0 +1,5 @@
+package com.prodapt.project.request;
+
+public class AdminRequest {
+
+}

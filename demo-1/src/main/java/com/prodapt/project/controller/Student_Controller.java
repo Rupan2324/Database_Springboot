@@ -2,8 +2,8 @@ package com.prodapt.project.controller;
 
 import java.util.List;
 
-import com.prodapt.project.bean.Admin_login;
 import com.prodapt.project.bean.Student_login;
+import com.prodapt.project.request.StudentRequest;
 import com.prodapt.project.service.Student_Service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +23,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class Student_Controller {
 	@Autowired
 	private Student_Service service;
-	@PostMapping("/add")
-	public ResponseEntity<Student_login> addStudent(@RequestBody Student_login student) {
-		Student_login newStudent = service.addStudent_login(student);
+	@PostMapping("/add/{institution}")
+	public ResponseEntity<Student_login> addStudent(@RequestBody StudentRequest S,@PathVariable("institution")String institution) {
+		
+		Student_login Student =S.toStudent();
+		Student_login newStudent=service.addStudent_login(S, institution);
 		return new ResponseEntity<>(newStudent,HttpStatus.CREATED);
 	}
 	@GetMapping("/all")
@@ -39,7 +41,8 @@ public class Student_Controller {
 		return new ResponseEntity<>(students_id,HttpStatus.OK);
 	}
 	@PutMapping("/update")
-	public ResponseEntity<Student_login> updateStudent(@RequestBody Student_login student) {
+	public ResponseEntity<Student_login> updateStudent(@RequestBody StudentRequest s) {
+		Student_login student=s.toStudent();
 		Student_login updateStudent = service.updateStudent_login(student);
 		return new ResponseEntity<>(updateStudent,HttpStatus.OK);
 	}
@@ -49,7 +52,8 @@ public class Student_Controller {
 		return "Student removed!! "+regno;
 	}
 	@PostMapping("/studentlogin")
-	public Student_login studentlogin(@RequestBody Student_login student) throws Exception {
+	public Student_login studentlogin(@RequestBody StudentRequest s) throws Exception {
+		Student_login student=s.toStudent();
 		 String tempregno = student.getRegno();
          String temppassword = student.getPassword();
          Student_login studentObj=null;
@@ -62,8 +66,9 @@ public class Student_Controller {
          }
          return studentObj;
      }
-    @PostMapping("/addstudent")
- 	public ResponseEntity<Student_login> addStudentDetails(@RequestBody Student_login student) throws Exception {
+    @PostMapping("/addstudent/{institution}")
+ 	public ResponseEntity<Student_login> addStudentDetails(@RequestBody StudentRequest s,@PathVariable("institution")String institution) throws Exception {
+ 		Student_login student=s.toStudent();
  		 String tempregno=student.getRegno();
  		Student_login newStudent = null;
          if(tempregno!=null && !"".equals(tempregno)) {
@@ -72,7 +77,7 @@ public class Student_Controller {
                  throw new Exception("User with "+tempregno+" already exists");
              }
              else {
-            	 newStudent = service.addStudent_login(student);
+            	 newStudent = service.addStudent_login(s, institution);
              }
          }
          return new ResponseEntity<>(newStudent,HttpStatus.CREATED);

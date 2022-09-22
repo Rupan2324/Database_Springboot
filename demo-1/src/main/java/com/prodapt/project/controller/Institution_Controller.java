@@ -33,7 +33,7 @@ public class Institution_Controller {
 		return new ResponseEntity<>(Institutions,HttpStatus.OK);
 	}
 	@GetMapping("/find/{college}")
-	public ResponseEntity<Institution> getEmployeeByRegno(@PathVariable("college") String college) {
+	public ResponseEntity<Institution> getEmployeeByCollege(@PathVariable("college") String college) {
 		Institution Institutions_id = service.findInstitutionByCollege(college);
 		return new ResponseEntity<>(Institutions_id,HttpStatus.OK);
 	}

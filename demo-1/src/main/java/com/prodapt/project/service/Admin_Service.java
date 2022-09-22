@@ -6,6 +6,7 @@ import com.prodapt.project.bean.Admin_login;
 import com.prodapt.project.bean.Student_login;
 import com.prodapt.project.exception.UserNotFoundException;
 import com.prodapt.project.repositiory.Admin_Repository;
+import com.prodapt.project.request.AdminRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,10 +28,10 @@ public class Admin_Service {
 		return repository.findAdminByUsername(username)
 				.orElseThrow(()->new UserNotFoundException("admin by username "+username+" was not found"));
 	}
-	public Admin_login updateAdmin(Admin_login admin) {
-		Admin_login exisitingAdmin = repository.findByUsername(admin.getUsername());
+	public Admin_login updateAdmin(AdminRequest a) throws Exception {
+		Admin_login exisitingAdmin = repository.findByUsername(a.getUsername());
 	
-		exisitingAdmin.setPassword(admin.getPassword());
+		exisitingAdmin.setPassword(a.getPassword());
 	
 		return repository.save(exisitingAdmin);
 	}

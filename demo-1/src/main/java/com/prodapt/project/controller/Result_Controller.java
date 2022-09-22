@@ -1,8 +1,11 @@
 package com.prodapt.project.controller;
 
 import java.util.List;
+
 import com.prodapt.project.bean.Result;
+import com.prodapt.project.request.ResultRequest;
 import com.prodapt.project.service.Result_Service;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,9 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Result_Controller {
 	@Autowired
 	private Result_Service service;
-	@PostMapping("/add")
-	public ResponseEntity<Result> addResult(@RequestBody Result result) {
-		Result newResult = service.addResult(result);
+	@PostMapping("/add/{Student_login}")
+	public ResponseEntity<Result> addResult(@RequestBody ResultRequest rs,@PathVariable("Student_login")String Student_login  ) {
+		Result result =rs.toResult();
+		Result newResult = service.addResult(rs,Student_login);
 		return new ResponseEntity<>(newResult,HttpStatus.CREATED);
 	}
 	@GetMapping("/all")
@@ -35,8 +39,9 @@ public class Result_Controller {
 		return new ResponseEntity<>(Results_id,HttpStatus.OK);
 	}
 	@PutMapping("/update")
-	public ResponseEntity<Result> updateResult(@RequestBody Result Result) {
-		Result updateResult = service.updateResult(Result);
+	public ResponseEntity<Result> updateResult(@RequestBody ResultRequest rs) {
+		Result result =rs.toResult();
+		Result updateResult = service.updateResult(result);
 		return new ResponseEntity<>(updateResult,HttpStatus.OK);
 	}
 	@DeleteMapping("/delete/{rollno}")

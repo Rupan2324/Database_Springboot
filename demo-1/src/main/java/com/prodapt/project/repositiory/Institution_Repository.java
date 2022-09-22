@@ -7,6 +7,7 @@ import javax.transaction.Transactional;
 import com.prodapt.project.bean.Institution;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
 public interface Institution_Repository extends JpaRepository<Institution,String>{
 	Institution findByCollege(String College);

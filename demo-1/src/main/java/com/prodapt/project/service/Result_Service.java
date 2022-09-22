@@ -2,20 +2,29 @@ package com.prodapt.project.service;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import com.prodapt.project.bean.Result;
+import com.prodapt.project.bean.Student_login;
 import com.prodapt.project.exception.UserNotFoundException;
 import com.prodapt.project.repositiory.Result_Repository;
+import com.prodapt.project.repositiory.Student_Repository;
+import com.prodapt.project.request.ResultRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestMapping;
 @Service
-@RequestMapping("/result")
 public class Result_Service {
 	@Autowired
 	private Result_Repository repository;
-	public Result addResult(Result result) {
-		return repository.save(result);
+	@Autowired
+	private Student_Repository repo;
+	@Transactional
+	public Result addResult(ResultRequest r,String student_login) {
+		Result rs = r.toResult();
+		Student_login sl = repo.findByRegno(student_login);
+		rs.setStudent_login(sl);
+		return repository.save(rs);
 	}
 	public List<Result> findAllResults(){
 		return repository.findAll();

@@ -5,13 +5,14 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Result {
-@Id
 
+@Column(nullable=false)
 private String rollno;
+@Id
 @Column(nullable=false)
 private String course_code;
 @Column(nullable=false)
@@ -20,8 +21,8 @@ private int semester;
 private String grade;
 @Column(nullable=false)
 private String result;
-@OneToOne(cascade = CascadeType.ALL)
-@JoinColumn(name = "regno")
+@ManyToOne(cascade = CascadeType.ALL)
+@JoinColumn(name = "regno",nullable=false)
 private Student_login student_login;
 public String getRollno() {
 	return rollno;
