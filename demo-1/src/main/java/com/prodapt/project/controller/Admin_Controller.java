@@ -3,7 +3,6 @@ package com.prodapt.project.controller;
 import java.util.List;
 
 import com.prodapt.project.bean.Admin_login;
-import com.prodapt.project.bean.Student_login;
 import com.prodapt.project.request.AdminRequest;
 import com.prodapt.project.service.Admin_Service;
 

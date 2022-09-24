@@ -3,7 +3,6 @@ package com.prodapt.project.service;
 import java.util.List;
 
 import com.prodapt.project.bean.Admin_login;
-import com.prodapt.project.bean.Student_login;
 import com.prodapt.project.exception.UserNotFoundException;
 import com.prodapt.project.repositiory.Admin_Repository;
 import com.prodapt.project.request.AdminRequest;
